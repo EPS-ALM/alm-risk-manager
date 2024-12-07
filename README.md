@@ -48,10 +48,25 @@
     ```bash
     pip install -r requirements.txt
     ```
+
+<br></br>
+
+### Ativando o Ambiente Virtual no VS Code
+
+1. Certifique-se de que o ambiente virtual (`venv`) foi criado e ativado no terminal.
+2. Abra um arquivo notebook (`.ipynb`) no VS Code.
+3. Clique em **Select Kernel** no topo da interface do notebook.
+4. Selecione o ambiente virtual que você criou.
+
+![Select Kernel](assets/select-kernel.png)
+![Select Kernel OK](assets/select-kernel-ok.png)
+
+
+
 <br></br>
 
 ## Desativando o Ambiente Virtual
-Após concluir suas atividades, desative o ambiente virtual com:
+No terminal desative o ambiente virtual com:
 ```bash
 deactivate
 ```
