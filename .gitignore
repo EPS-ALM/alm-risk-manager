@@ -1,0 +1,22 @@
+# Ambiente Virtual
+venv/
+
+# Arquivos Temporários do Jupyter
+.ipynb_checkpoints/
+
+# Dados Sensíveis ou Grandes
+data/*.csv
+data/*.xlsx
+data/*.json
+
+# Logs e Arquivos Temporários
+*.log
+*.tmp
+
+# Arquivos Compilados ou Binários
+*.pyc
+*.pyo
+__pycache__/
+
+# Configurações Locais de IDEs
+.vscode/
