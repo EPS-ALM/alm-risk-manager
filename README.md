@@ -2,14 +2,14 @@
 
 - [ ] **Análise de Risco País**
 - [ ] **Gerenciamento de Risco de Taxa de Juros**
-- [ ] **Gestão de Risco de Investimento**
+- [x] **Gestão de Risco de Investimento**
 - [ ] **Monitoramento de Risco de Ativos Digitais**
 
 ## 1. Configuração do Ambiente
 
 ### Requisitos
 
-- Python 3.8 ou superior
+- `Python` instalado
 - `git` instalado
 - `pip` para gerenciamento de pacotes
 
