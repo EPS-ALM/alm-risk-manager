@@ -9,7 +9,7 @@
 
 ### Requisitos
 
-- Python 3.8 ou superior
+- `Python` instalado
 - `git` instalado
 - `pip` para gerenciamento de pacotes
 
@@ -51,7 +51,7 @@
 
 <br></br>
 
-### Ativando o Ambiente Virtual no VS Code
+## 2. Ativando o Ambiente Virtual no VS Code
 
 1. Certifique-se de que o ambiente virtual (`venv`) foi criado e ativado no terminal.
 2. Abra um arquivo notebook (`.ipynb`) no VS Code.
@@ -65,7 +65,7 @@
 
 <br></br>
 
-## Desativando o Ambiente Virtual
+## 3. Desativando o Ambiente Virtual
 No terminal desative o ambiente virtual com:
 ```bash
 deactivate
