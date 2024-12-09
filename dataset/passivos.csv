@@ -1,0 +1,4 @@
+ID,Tipo de Passivo,Valor Mensal (R$),Datas dos Fluxos (T),Taxa de Desconto (%)
+1,Benefício Mensal,10000,12,0.5
+2,Resgate,1500,12,0.5
+3,Pensão de Longo Prazo,1000,61,0.5
