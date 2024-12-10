@@ -1,7 +1,7 @@
 # ALM (Gestão de Riscos)
 
 - [ ] **Análise de Risco País**
-- [ ] **Gerenciamento de Risco de Taxa de Juros**
+- [x] **Gerenciamento de Risco de Taxa de Juros**
 - [x] **Gestão de Risco de Investimento**
 - [ ] **Monitoramento de Risco de Ativos Digitais**
 
