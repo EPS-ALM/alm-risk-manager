@@ -1,0 +1,6 @@
+ID,Ativo,Tipo de Ativo,Valor de Mercado (R$),Datas dos Fluxos (T),Taxa de Juros Atual (%)
+1,Vale,Ação,2000000,5,0.20135789054933784
+2,Petrobras,Ação,1500000,4,0.44951779202283837
+3,Ouro,Commodities,1000000,6,0.14265913070802871
+4,Dollar,Moeda,500000,2,0.09331084020547853
+5,S&P 500,Índice,1000000,5,0.16858618898993982
