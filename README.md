@@ -58,9 +58,8 @@
 3. Clique em **Select Kernel** no topo da interface do notebook.
 4. Selecione o ambiente virtual que você criou.
 
-![Select Kernel](assets/select-kernel.png)
-![Select Kernel OK](assets/select-kernel-ok.png)
-
+![Select Kernel](imgs/select-kernel.png)
+![Select Kernel OK](imgs/select-kernel-ok.png)
 
 
 <br></br>

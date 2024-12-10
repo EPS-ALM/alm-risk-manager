@@ -5,9 +5,9 @@ venv/
 .ipynb_checkpoints/
 
 # Dados Sensíveis ou Grandes
-data/*.csv
-data/*.xlsx
-data/*.json
+dataset/*.csv
+dataset/*.xlsx
+dataset/*.json
 
 # Logs e Arquivos Temporários
 *.log
