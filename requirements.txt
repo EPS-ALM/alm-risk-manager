@@ -8,3 +8,5 @@ notebook
 scikit-learn
 statsmodels
 yfinance
+ipykernel
+python-dotenv
