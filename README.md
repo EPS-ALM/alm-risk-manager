@@ -72,6 +72,10 @@ O projeto utiliza `pytest` para validar as funções e garantir que o código es
     ```bash
     pytest tests/
     ```
+    ou
+    ```bash
+    python -m pytest
+    ```
 
 Isso executará todos os testes localizados na pasta `tests/` e exibirá um relatório com o resultado.
 
