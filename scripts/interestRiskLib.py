@@ -74,17 +74,24 @@ def constroi_cenario(duration, convexity, variancia, taxa, total):
 def formatar_percentual(x, _):
     return f"{x*100:.0f}%"
 
-def formatar_preco(x, _):
+def formatar_preco_ativo(x, _):
     return f"{x / 1_000_000:.1f}M"
 
-def interest_rate_graph(duration_convexity_data, variation):
+def formatar_preco_passivo(x, _):
+    return f"{x / 1_000:.1f}K"
+
+def interest_rate_graph(duration_convexity_data, variation, type):
     # Configuração dos gráficos 
     plt.style.use('_mpl-gallery')
     fig, axs = plt.subplots(len(duration_convexity_data), 1, figsize=(18, 22), sharex=True)
     fig.suptitle('Duration e Convexity por Ativo', fontsize=16)
 
     for i, (index, row) in enumerate(duration_convexity_data.iterrows()):
-        ativo = row['Ativo']
+
+        if type == 0:
+            ativo = row['Ativo']
+        else:
+            ativo = row['Passivo']
         duration = row['Duration']
         convexity = row['Convexity']
         taxa = row['Taxa']
@@ -101,7 +108,8 @@ def interest_rate_graph(duration_convexity_data, variation):
 
     # Configurações do subplot
         axs[i].xaxis.set_major_formatter(FuncFormatter(formatar_percentual))
-        axs[i].yaxis.set_major_formatter(FuncFormatter(formatar_preco))
+        
+        axs[i].yaxis.set_major_formatter(FuncFormatter(formatar_preco_ativo)) if type==0 else axs[i].yaxis.set_major_formatter(FuncFormatter(formatar_preco_passivo))
         axs[i].set_title(f'{ativo} (Taxa Base: {taxa:.2%})', fontsize=14)
         axs[i].set_xlabel('Variação da Taxa de Juros (%)', fontsize=12)
         axs[i].set_ylabel('Preço do Ativo (R$)', fontsize=12)
