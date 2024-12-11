@@ -1,0 +1,1 @@
+# Este arquivo pode estar vazio, mas garante que "tests" seja tratado como um módulo Python.

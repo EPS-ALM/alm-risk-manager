@@ -1,12 +1,28 @@
+# Data manipulation and analysis
 pandas
 numpy
+
+# Visualization
 matplotlib
 seaborn
+
+# Statistical analysis
 scipy
+statsmodels
+
+# Machine learning
+scikit-learn
+
+# Finance data
+yfinance
+
+# Jupyter Notebook
 jupyterlab
 notebook
-scikit-learn
-statsmodels
-yfinance
 ipykernel
+
+# Environment variables
 python-dotenv
+
+# Testing framework
+pytest

@@ -82,6 +82,8 @@ def carteira_otimizada_sharpe(retornos):
     def objetivo(pesos):
         retorno_portfolio = np.dot(pesos, retorno_medio * 252)  # Anualizar retornos dentro do cálculo
         risco_portfolio = np.sqrt(np.dot(pesos.T, np.dot(cov_matrix * 252, pesos)))  # Anualizar matriz dentro do cálculo
+        if risco_portfolio == 0:
+            return np.inf  # Evitar divisão por zero
         sharpe_ratio = retorno_portfolio / risco_portfolio
         return -sharpe_ratio  # Maximizar Sharpe é equivalente a minimizar seu negativo
 
