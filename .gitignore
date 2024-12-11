@@ -20,3 +20,9 @@ __pycache__/
 
 # Configurações Locais de IDEs
 .vscode/
+
+# Arquivos de Testes e Relatórios
+test-output/
+*.pytest_cache/
+.coverage
+htmlcov/

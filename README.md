@@ -61,6 +61,23 @@
 ![Select Kernel](imgs/select-kernel.png)
 ![Select Kernel OK](imgs/select-kernel-ok.png)
 
+<br></br>
+
+## 3. Testando com pytest
+
+O projeto utiliza `pytest` para validar as funções e garantir que o código esteja funcionando corretamente. Para rodar os testes:
+
+1. Certifique-se de que o ambiente virtual esteja ativado.
+2. Execute o comando:
+    ```bash
+    pytest tests/
+    ```
+
+Isso executará todos os testes localizados na pasta `tests/` e exibirá um relatório com o resultado.
+
+Exemplo de saída esperada:
+
+![Pytest](imgs/pytest.png)
 
 <br></br>
 
