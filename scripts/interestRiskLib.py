@@ -7,13 +7,13 @@ from matplotlib.ticker import FuncFormatter
 def calcular_valor_presente(fluxos, taxa):
     return [cf / ((1 + taxa) ** (t + 1)) for t, cf in enumerate(fluxos)]
 
-# Função para calcular peso dps valores presente
+# Função para calcular peso dos valores presente
 def peso_valor_presente(valor_presente, total):
     return [value/total for value in valor_presente]
 
-# Função para calcular peso dps valores presente (sua soma é o Macaulay duration)
+# Função para calcular peso por periodo dos valores presente (sua soma é o Macaulay duration)
 def peso_por_periodo(peso_lista):
-    return [periodo*peso for periodo, peso in enumerate(peso_lista)]
+    return [periodo*peso for periodo, peso in enumerate(peso_lista, start=1)]
 
 # Função para calcular Duration
 def calcular_duration(fluxos, taxa):
@@ -31,11 +31,19 @@ def calcular_convexity(fluxos, taxa):
 
 # Função para gerar fluxos de caixa
 def gerar_fluxos_juros(periodos, valor_inicial, taxa_anual):
-    return [round(valor_inicial * ((1 + taxa_anual)**t), 2)for t in range(1, periodos + 1)]
+    if periodos < 1 or valor_inicial < 1 or taxa_anual <= 0:
+        print("Error: Periodo, valor atual e taxa devem ser um inteiro positivo")
+        return None
+    else:
+        return [round(valor_inicial * ((1 + taxa_anual)**t), 2)for t in range(1, periodos + 1)]
 
 # Função para gerar fluxos de desconto
 def gerar_fluxos_descontos(periodos, valor_mensal, taxa_desconto):
-    return [round(valor_mensal / ((1 + taxa_desconto)**t), 2) for t in range(1, periodos + 1)]
+    if periodos < 1 or valor_mensal < 1 or taxa_desconto <= 0:
+        print("Error: Periodo, valor atual e taxa devem ser um inteiro positivo")
+        return None
+    else:
+        return [round(valor_mensal / ((1 + taxa_desconto)**t), 2) for t in range(1, periodos + 1)]
 
 # Constroi Tabela de cenário determinado por uma variância
 def constroi_cenario(duration, convexity, variancia, taxa, total):
