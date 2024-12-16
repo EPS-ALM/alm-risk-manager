@@ -1,6 +1,5 @@
 from fastapi import FastAPI
-
-import notebook
+from routers import notebook
 
 app = FastAPI()
 

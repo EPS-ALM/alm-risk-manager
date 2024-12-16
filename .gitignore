@@ -1,5 +1,6 @@
 # Ambiente Virtual
 venv/
+.venv/
 
 # Arquivos Temporários do Jupyter
 .ipynb_checkpoints/
