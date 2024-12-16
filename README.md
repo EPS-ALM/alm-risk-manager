@@ -81,7 +81,29 @@ Exemplo de saída esperada:
 
 <br></br>
 
-## 3. Desativando o Ambiente Virtual
+## 4. Gerando Arquivos HTML dos Notebooks
+
+O script `scripts/convert_ipynb_to_html.py` permite converter notebooks Jupyter (`.ipynb`) em arquivos HTML para facilitar a visualização ou compartilhamento.
+
+### Como Usar
+
+1. Certifique-se de que o ambiente virtual esteja ativado.
+2. Execute o script no terminal:
+    ```shell
+    python scripts/convert_ipynb_to_html.py
+    ```
+
+### O que o script faz:
+- Converte todos os notebooks da pasta `notebooks/` para arquivos HTML.
+- Salva os arquivos HTML na pasta `notebooks/notebooks_html/`.
+- Sobrescreve apenas se o conteúdo gerado for diferente.
+
+Se algum notebook estiver vazio ou com erro de formatação, o script exibirá uma mensagem de erro correspondente.
+
+
+<br></br>
+
+## 5. Desativando o Ambiente Virtual
 No terminal desative o ambiente virtual com:
 ```bash
 deactivate
