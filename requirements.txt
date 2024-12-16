@@ -28,9 +28,10 @@ python-dotenv
 pytest
 
 # API
-fastapi==0.74.0
+fastapi==0.115.6
 py==1.11.0
-pydantic
-uvicorn==0.17.6
+pydantic==2.10.3
+pydantic_core==2.27.1
+uvicorn==0.32.1
 requests==2.27.1
 
