@@ -114,6 +114,10 @@ Se algum notebook estiver vazio ou com erro de formatação, o script exibirá u
     http://localhost:8000
     ```
 
+Página localhost:8000:
+
+![Localhost](imgs/localhost_notebooks.png)
+
 <br></br>
 
 ## 5. Desativando o Ambiente Virtual
