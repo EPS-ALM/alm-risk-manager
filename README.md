@@ -1,6 +1,6 @@
 # ALM (Gestão de Riscos)
 
-- [ ] **Análise de Risco País**
+- [x] **Análise de Risco País**
 - [x] **Gerenciamento de Risco de Taxa de Juros**
 - [x] **Gestão de Risco de Investimento**
 - [x] **Monitoramento de Risco de Ativos Digitais**
@@ -100,6 +100,19 @@ O script `scripts/convert_ipynb_to_html.py` permite converter notebooks Jupyter 
 
 Se algum notebook estiver vazio ou com erro de formatação, o script exibirá uma mensagem de erro correspondente.
 
+### Testar o html gerado
+- No terminal, navegue até a pasta onde os arquivos HTML estão armazenados:
+    ```shell
+    cd notebooks/notebooks_html
+    ```
+- Inicie um servidor HTTP local:
+    ```shell
+    python -m http.server 8000
+    ```
+- Acesse o servidor no navegador em:
+    ```shell
+    http://localhost:8000
+    ```
 
 <br></br>
 
