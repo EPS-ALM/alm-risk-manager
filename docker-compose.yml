@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      args:
+        ENV_NAME: ${ENV_NAME}
+    env_file: .env
+    volumes:
+      -  './src/:/home/src'
+    ports:
+      - ${APP_PORT}:${APP_PORT}
+
+  # db:
+  #   image: postgres:13.2-alpine
+  #   container_name: db
+  #   env_file: .env
+  #   volumes:
+  #     - ./database:/docker-entrypoint-initdb.d
+  #   ports:
+  #     - ${DB_PORT}:${DB_PORT}
+
+networks:
+  default:
+    name: alm-network
+    external: True
