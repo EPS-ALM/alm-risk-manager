@@ -8,6 +8,7 @@ venv/
 dataset/*.csv
 dataset/*.xlsx
 dataset/*.json
+.env
 
 # Logs e Arquivos Temporários
 *.log
