@@ -15,7 +15,14 @@ def get_notebook(notebook_name: str):
 
             with open(f"notebooks/notebooks_html/{notebook_name}", "r", encoding="utf8") as f:
                 notebook_html = f.read()
-            return Response(content=notebook_html, media_type="text/html")
+            
+            notebook_json = {
+                "notebook_name": notebook_name,
+                "notebook_html": str(notebook_html)
+            }
+            
+            return notebook_json
+        
         else:
             logging.warning(f"Notebook {notebook_name} not found")
             return Response(status_code=status.HTTP_404_NOT_FOUND)
