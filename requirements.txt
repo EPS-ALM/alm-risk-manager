@@ -30,7 +30,7 @@ pytest
 # API
 fastapi==0.74.0
 py==1.11.0
-pydantic==1.10.0
+pydantic
 uvicorn==0.17.6
 requests==2.27.1
 
